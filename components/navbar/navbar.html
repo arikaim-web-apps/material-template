@@ -3,8 +3,8 @@
     {{ styles.size }} 
     {{ styles.space }} 
     {{ styles.color }}
-    {{ class }}">      
-    <div 
+    {{ styles.class }}">      
+    <div   
         class="flex flex-row items-center 
         {{ styles.content.size }}
         {{ styles.content.align }}
@@ -17,7 +17,7 @@
         </btn>   
         <div class="px-2 xs:px-1 flex items-center flex-row xs:flex-grow"> 
             <div class="bg-slate-50 rounded-full">              
-                {{ component('material-icons~store',{ size: 'h-10 w-10' },'svg') }}                
+                {{ component('material-icons~dashboard',{ size: 'h-10 w-10' },'svg') }}                
             </div>                                                 
             <div class="pl-2">                                 
                 <div 
@@ -32,8 +32,8 @@
                 </div>
             </div> 
         </div>     
-        <div class="flex flex-grow justify-end">
-            <div class="flex flex-row items-center lg:flex xs:hidden md:flex">
+        <div class="flex flex-grow justify-end">           
+            <div class="flex flex-row items-center">               
                 {{  component('current>navbar.menu',{ 
                         active: active, 
                         styles: styles 

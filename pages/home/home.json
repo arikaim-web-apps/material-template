@@ -1,12 +1,12 @@
 {   
     "head": {
-        "favicon": "images/favicon.svg",  
-        "title": "Commerce",
-        "description": "Commerce",
-        "keywords": "commerce"
+        "favicon": "images/favicon.png",  
+        "title": "Material Design Template",
+        "description": "Material Design Template",
+        "keywords": "Material Design Template"
     },
-    "title": "Commerce",
-    "subtitle": "Commerce.",
+    "title": "Material Design Template",
+    "subtitle": "Material Design Template.",
     "labels": {
     },
     "features": {

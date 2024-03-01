@@ -18,6 +18,7 @@
 {% endfor %}
             
 {% if service('access').isLogged() == false %}  
+
     {% for item in items.user %}  
     <div class="{{ styles.item.class }}">
         <a 
@@ -33,6 +34,7 @@
     </div>             
     {% endfor %}    
 {% else %}
+
     <a 
         class="{{ styles.item.color }}" 
         href="{{ url('/user') }}">
