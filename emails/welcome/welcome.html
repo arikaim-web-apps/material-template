@@ -1,0 +1,18 @@
+{%  component 'email~foundation.container' %}
+
+<h1 class="text-center"> 
+    Welcome
+</h1> 
+<b>{{ (user_name is empty) ? email : user_name }}</b>
+<br>
+<br>
+
+<br>
+    {{  component('email~foundation.button',{ 
+            class:'rounded',
+            title: labels.login, 
+            url: '/login' 
+        },'static') 
+    }}
+
+{% endcomponent %}

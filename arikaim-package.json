@@ -1,0 +1,83 @@
+{      
+    "title": "Material Base Theme",
+    "version": "1.0.0",
+    "name": "material-base",
+    "package-type": "template",
+    "icon": "shop",
+    "thumbnail": "commerce-thumbnail.jpg",
+    "private-repository": true,
+    "repository": "arikaim-web-apps/material-base-theme.git",
+    "require": {
+        "components": [
+            "icons",
+            "tailwind"
+        ],
+        "library": [
+            "jquery",
+            "arikaim",
+            "arikaim-ui",
+            "tailwind"
+        ],
+        "extensions": [
+            "users"
+        ]
+    },
+    "routes": [
+        {
+            "path": "/",         
+            "home": true,  
+            "page": "home",
+            "language-path": true,
+            "name": "Home"                   
+        },
+        {
+            "path": "/about",           
+            "page": "about",
+            "language-path": true,
+            "name": "About"                   
+        },
+        {
+            "path": "/privacy-policy",           
+            "page": "privacy",
+            "language-path": true,
+            "name": "Privacy"                   
+        },
+        {
+            "path": "/terms",           
+            "page": "terms",
+            "language-path": true,
+            "name": "Terms"                   
+        },
+        {
+            "path": "/blog",      
+            "language-path": true,     
+            "page": "blog",
+            "name": "Blog"                   
+        }
+    ],
+    "languages": [
+        "en"      
+    ],
+    "themes": [
+        "default"
+    ],
+    "default-theme": "default",
+    "include": {     
+        "components": [    
+            "current>users"
+        ],         
+        "css": [
+            "preflight.css",
+            "style.css",
+            "tailwind.min.css"
+        ],        
+        "library": [
+            "jquery",                                
+            "arikaim",
+            "arikaim-ui",
+            "fomantic:form-validation"                                   
+        ]       
+    },
+    "modules": {
+    }
+}

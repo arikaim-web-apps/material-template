@@ -1,0 +1,47 @@
+{
+    "title": "Commerce",   
+    "columns": {
+        "services": {
+            "title": "Games",
+            "items": [               
+                {
+                    "title": "Blog",
+                    "url": "/blog",
+                    "icon": "icons~document.text"
+                } 
+            ]
+        },
+        "company": {
+            "title": "Company",
+            "items": [             
+                {
+                    "title": "Contact Us",
+                    "url": "/contact-us",
+                    "icon": "icons~mail"
+                },
+                {
+                    "title": "About",
+                    "url": "/about",
+                    "icon": "icons~info"
+                }
+            ]
+        },
+        "legal": {
+            "title": "Legal",
+            "items": [
+                {
+                    "title": "Privacy Policy",
+                    "url": "/privacy-policy",
+                    "icon": "icons~info"
+                },
+                {
+                    "title": "Terms and Conditions",
+                    "url": "/terms",
+                    "icon": "icons~lock"
+                }
+            ]
+        }
+    },
+    "created": "Created with Arikaim CMS",
+    "copyright": "Copyright {{ interval }}. All Rights Reserved."
+}

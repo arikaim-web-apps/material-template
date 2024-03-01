@@ -1,0 +1,14 @@
+{   
+    "head": {
+        "favicon": "images/favicon.svg",  
+        "title": "Commerce",
+        "description": "Commerce",
+        "keywords": "commerce"
+    },
+    "title": "Commerce",
+    "subtitle": "Commerce.",
+    "labels": {
+    },
+    "features": {
+    }   
+}
