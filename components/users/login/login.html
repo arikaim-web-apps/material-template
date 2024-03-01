@@ -92,5 +92,13 @@
     {{ component('icons~lock.open',styles.link.icon,'svg') }}  
     <a class="pl-2 text-sm {{ styles.link.class }} {{ styles.link.hover }}" id="forgotten_button">   
         {{ links.forgotten }}
-    </a>       
+    </a>   
+    <div class="pl-8 flex flex-row items-center">
+        {{ component('material-icons~user.add',styles.link.icon,'svg') }}  
+        <a 
+            href="{{ url('signup') }}"
+            class="pl-2 text-sm {{ styles.link.class }} {{ styles.link.hover }}">   
+            {{ links.signup }}
+        </a> 
+    </div>   
 </div>
