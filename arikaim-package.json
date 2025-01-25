@@ -6,7 +6,7 @@
     "icon": "shop",
     "thumbnail": "commerce-thumbnail.jpg",
     "private-repository": true,
-    "repository": "arikaim-web-apps/material-base-theme.git",
+    "repository": "arikaim-web-apps/material-template.git",
     "require": {
         "components": [
             "icons",
