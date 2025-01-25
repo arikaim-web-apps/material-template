@@ -8,7 +8,7 @@
         "align": "mx-auto",
         "space": "p-2",
         "color": "",
-        "border": "border-b border-gray-300"
+        "border": ""
     },
     "sidebar": {
         "icon": "icons~menu"

@@ -1,23 +1,28 @@
 const withMT = require("@material-tailwind/html/utils/withMT");
 
+
 module.exports = withMT({
     content: [
         './**/*.html',
         './**/styles.json',
-        './themes/default.json',
-        '../../components/tailwind/**/*.html',
-        '../../components/tailwind/**/*.json'
+        './themes/default.json'      
     ], 
-    theme: {    
+    theme: {  
+        screens: {
+            "sm": "340px",
+        },  
+        extend: {
+           
+        },
         ripple: theme => ({
             colors: theme('colors')
-        }),   
-        extend: {},
+        })
     },
     variants: {       
     },
     darkMode: 'class',
-    plugins: [             
+    plugins: [ 
+        require("@tailwindcss/typography")
     ],
     corePlugins: {    
         preflight: false  

@@ -13,101 +13,95 @@
             <input type="hidden" name="user_type_slug" value="{{ user_type }}">
             <input type="hidden" name="group" value="{{ group }}">
             {% if settings.username.show == 'true' %}
-                <div class="field flex flex-col my-1">
-                    <label class="{{ styles.label }}">
-                        {{ fields.user_name.label }}
-                    </label>
-                    <div class="relative">
-                        <input 
+                <div class="{{ styles.field }} mt-4">                    
+                    <input 
                         class="form-input {{ styles.input.class }} {{ styles.input.hover }} {{ styles.input.focus }}"
                         rule="minLength[2]"
                         type="text" 
                         name="user_name" 
                         id="user_name" 
-                        {{ fields.user_name.placeholder|attr('placeholder') }} 
+                        placeholder=" "                       
                         value="{{ user.user_name }}"> 
-                    </div>
+                    <label class="{{ styles.label }}">
+                        {{ fields.user_name.label }}
+                    </label>
                 </div>
             {% endif %}
             {% if settings.email.show == 'true' %}     
-                <div class="field field flex flex-col my-1  
-                    {{ settings.email.required|ifthen('true','required') }}">
-                    <label class="{{ styles.label }}">
-                        {{ fields.email.label }}
-                    </label>
+                <div class="mt-4 {{ styles.field }}
+                    {{ settings.email.required|ifthen('true','required') }}">                   
                     <input 
                         class="form-input {{ styles.input.class }} {{ styles.input.hover }} {{ styles.input.focus }}"
                         type="text" 
                         rule="email"
                         name="email" 
                         id="email" 
-                        {{ fields.email.placeholder|attr('placeholder') }} 
+                        placeholder=" "                    
                         value="{{ user.email }}">  
+                    <label class="{{ styles.label }}">
+                        {{ fields.email.label }}
+                    </label>
                 </div>  
             {% endif %} 
             {% if settings.name.show == 'true' %}     
-            <div class="field flex flex-col my-1 {{ settings.name.required|ifthen('true','required') }}">
-                <label class="{{ styles.label }}">
-                    {{ fields.name.label }}
-                </label>
+            <div class="mt-4 {{ styles.field }} {{ settings.name.required|ifthen('true','required') }}">               
                 <input 
                     class="form-input {{ styles.input.class }} {{ styles.input.hover }} {{ styles.input.focus }}"
                     name="name" 
                     id="name" 
-                    placeholder="{{ fields.name.placeholder }}" 
+                    placeholder=" " 
                     type="text" 
                     value="{{ user.name }}">
+                <label class="{{ styles.label }}">
+                    {{ fields.name.label }}
+                </label>
             </div>
             {% endif %}   
             {% if settings.phone.show == 'true' %}     
-            <div class="field flex flex-col my-1 {{ settings.phone.required|ifthen('true','required') }}">
-                <label class="{{ styles.label }}">
-                    {{ fields.phone.label }}
-                </label>
+            <div class="mt-4 {{ styles.field }} {{ settings.phone.required|ifthen('true','required') }}">              
                 <input 
                     class="form-input {{ styles.input.class }} {{ styles.input.hover }} {{ styles.input.focus }}"
                     name="phone" 
                     id="phone" 
-                    placeholder="{{ fields.phone.placeholder }}" 
+                    placeholder=" " 
                     type="text" 
                     value="{{ user.phone }}">
+                <label class="{{ styles.label }}">
+                        {{ fields.phone.label }}
+                </label>
             </div>
             {% endif %}            
-            <div class="field flex flex-col my-1 required">
+            <div class="mt-4 {{ styles.field }} required">
+                <div class="absolute view-password cursor-pointer grid w-6 h-6 place-items-center text-blue-gray-500 top-2/4 right-2 -translate-y-2/4">
+                    {{ component('icons~eye',styles.input.icon,'svg') }}
+                </div>              
+                <input 
+                    class="form-input password-field {{ styles.input.class }} {{ styles.input.hover }} {{ styles.input.focus }}"
+                    type="password" 
+                    name="password" 
+                    rule="minLength[4]"
+                    id="password" 
+                    placeholder=" "                       
+                    value="">
                 <label class="{{ styles.label }}">
                     {{ fields.password.label }}
                 </label>     
-                <div class="relative">         
-                    <input 
-                        class="form-input password-field {{ styles.input.class }} {{ styles.input.hover }} {{ styles.input.focus }}"
-                        type="password" 
-                        name="password" 
-                        rule="minLength[4]"
-                        id="password" 
-                        {{ fields.password.placeholder|attr('placeholder') }} 
-                        value="">
-                    <div class="absolute view-password cursor-pointer inset-y-0 right-0 flex items-center pr-2">
-                        {{ component('icons~eye',styles.input.icon,'svg') }}
-                    </div>
-                </div>   
             </div>    
-            <div class="field flex flex-col my-1 required">
+            <div class="mt-4 {{ styles.field }} required">                
+                <div class="absolute view-password cursor-pointer grid w-6 h-6 place-items-center text-blue-gray-500 top-2/4 right-2 -translate-y-2/4">
+                    {{ component('icons~eye',styles.input.icon,'svg') }}
+                </div>
+                <input 
+                    class="form-input password-field {{ styles.input.class }} {{ styles.input.hover }} {{ styles.input.focus }}"
+                    type="password"
+                    rule="match[password]" 
+                    name="repeat_password" 
+                    id="repeat_password" 
+                    placeholder=" "
+                    value="">                
                 <label class="{{ styles.label }}">
                     {{ fields.repeat_password.label }}
                 </label>
-                <div class="relative">   
-                    <input 
-                        class="form-input password-field {{ styles.input.class }} {{ styles.input.hover }} {{ styles.input.focus }}"
-                        type="password"
-                        rule="match[password]" 
-                        name="repeat_password" 
-                        id="repeat_password" 
-                        {{ fields.repeat_password.placeholder|attr('placeholder') }} 
-                        value="">
-                    <div class="absolute view-password cursor-pointer inset-y-0 right-0 flex items-center pr-2">
-                        {{ component('icons~eye',styles.input.icon,'svg') }}
-                    </div>
-                </div>
             </div>                       
             <div class="field mt-4" id="captcha_panel">   
                 {% if settings.captcha.show == 'true' %}     

@@ -1,12 +1,12 @@
 {   
     "head": {
         "favicon": "images/favicon.png",  
-        "title": "Material Design Template",
-        "description": "Material Design Template",
-        "keywords": "Material Design Template"
+        "title": "Material Template",
+        "description": "Material Template",
+        "keywords": "Material Template"
     },
-    "title": "Material Design Template",
-    "subtitle": "Material Design Template.",
+    "title": "Material Template",
+    "subtitle": "Material Template.",
     "labels": {
     },
     "features": {

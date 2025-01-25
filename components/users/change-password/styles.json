@@ -7,7 +7,7 @@
             "name": "icons~lock",
             "size": "h-6 w-6",
             "width": "2",
-            "color": "text-sky-500"
+            "color": "text-blue-500"
         },
         "class": "pb-2 pt-4 uppercase border-0 border-b-2 border-slate-300 border-solid"
     },
@@ -15,12 +15,12 @@
     "input": {
         "icon": {
             "size": "h-6 w-6",
-            "color": "text-sky-500",
+            "color": "text-blue-500",
             "width": "2",
             "class": "p-1"
         },
         "class": "w-full p-2 border border-solid rounded border-stone-200 placeholder-stone-400",
-        "focus": "focus:border-sky-300 focus:border focus:border-solid focus:outline-none",
-        "hover": "hover:border-sky-300 transition duration-1000 ease-in-out"
+        "focus": "focus:border-blue-300 focus:border focus:border-solid focus:outline-none",
+        "hover": "hover:border-blue-300 transition duration-1000 ease-in-out"
     }
 }

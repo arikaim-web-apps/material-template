@@ -1,4 +1,4 @@
-## Arikaim Material design base template
+## Arikaim Material design template
 
 #### Requirements 
   * [Arikaim CMS](https://github.com/arikaim/arikaim)
@@ -18,6 +18,9 @@ In theme folder:
 2. Install Tailwind material design
     npm i @material-tailwind/html
 
-3. Start watch process
+3. Install Tailwind typography module
+    npm i @tailwindcss/typography
+
+4. Start watch process
     npx tailwindcss -i css/include.css -o css/tailwind.min.css -m --watch 
  

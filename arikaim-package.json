@@ -1,12 +1,12 @@
 {      
     "title": "Material Base Theme",
-    "version": "1.0.0",
-    "name": "material-base",
+    "version": "1.0.1",
+    "name": "material",
     "package-type": "template",
     "icon": "shop",
-    "thumbnail": "commerce-thumbnail.jpg",
+    "thumbnail": "material-template-thumbnail.jpg",
     "private-repository": true,
-    "repository": "arikaim-web-apps/material-template.git",
+    "repository": "https://github.com/arikaim-web-apps/material-template.git",
     "require": {
         "components": [
             "icons",
@@ -74,7 +74,6 @@
         "library": [
             "jquery",                                
             "arikaim",
-            "arikaim:ripple",
             "arikaim-ui",
             "fomantic:form-validation"                                   
         ]       

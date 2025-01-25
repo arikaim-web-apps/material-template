@@ -1,0 +1,18 @@
+{% component 'current>layout' %}
+    <div      
+        class="h-full flex justify-center">
+        <div class="flex flex-col self-center w-1/2 md:w-1/2 sm:w-full xs:w-full"> 
+            <div class="w-full">
+                {{ component('material-icons~report',{ 
+                    size: 'h-14 w-14', 
+                    width: 1, 
+                    class: 'mx-auto',
+                    color: 'text-red-300' 
+                },'svg') }}                    
+            </div> 
+            <h4 class="mt-2 assistant-font text-3xl w-full p-4 text-center text-gray-800 rounded-lg bg-gray-100">
+                {{ message }}
+            </h4>       
+        </div>      
+    </div>          
+{% endcomponent %}
