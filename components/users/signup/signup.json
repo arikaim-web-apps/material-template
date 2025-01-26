@@ -7,6 +7,9 @@
     "buttons": {
         "save": "Register"           
     },
+    "links": {
+        "login": "Login"
+    },
     "fields": {
         "user_name":{
             "label": "Username",
