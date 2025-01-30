@@ -53,6 +53,12 @@
             "language-path": true,     
             "page": "blog",
             "name": "Blog"                   
+        },
+        {
+            "path": "/contact",      
+            "language-path": true,     
+            "page": "contact-us",
+            "name": "Contact"                   
         }
     ],
     "languages": [
