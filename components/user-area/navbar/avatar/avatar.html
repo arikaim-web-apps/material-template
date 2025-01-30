@@ -1,0 +1,22 @@
+{% set user_id = service('access').getId() %}
+{% set user_details = createModel('UserDetails','users').findByColumn(user_id,'user_id') %}   
+
+<label 
+    role="menuitem"
+    mountTo="user_area_content"
+    component="current>user-area.account"
+    class="navbar-menu-item px-2 flex flex-row items-center cursor-pointer">     
+    <div class="avatar">
+        <div class="{{ styles.avatar.ring }}">   
+            {% if user_details.avatar is not empty %}                            
+                <img alt="Avatar" src="{{ url(service('users').getViewAvatarUrl(),true) }}" />            
+            {% else %}  
+                {{ component('material-icons~user',styles.avatar.icon,'svg') }}  
+            {% endif %}
+        </div>
+    </div>
+    <div class="px-2 text-sm font-semibold sm:hidden md:block">
+        {{ user_details.name }}
+    </div>      
+</label>
+   

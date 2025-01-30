@@ -1,0 +1,33 @@
+{
+    "size": "w-full",
+    "space": "p-2 px-4 sm:pl-44 sm:pl-16",
+    "color": "bg-gray-50 border-b border-solid border-gray-200",
+    "content": {
+        "class": "",
+        "size": "w-full",
+        "align": "mx-auto",
+        "space": "p-1",
+        "color": "bg-gray-50"
+    },
+    "icon": {
+        "name": "icons~user",
+        "size": "h-6 w-6",
+        "class": "cursor-pointer transition duration-1000 ease-in-out",
+        "color": "text-gray-800"
+    },
+    "item": {
+        "class": "text-sm open-sans font-semibold px-4 md:p-1 lg:px-4",
+        "color": "text-gray-900 hover:text-blue-700 transition duration-700 ease-in-out",
+        "active": "text-blue-700"
+    },
+    "avatar": {
+        "menu": "flex w-full cursor-pointer select-none items-center gap-2 rounded-md px-3 pt-[9px] pb-2 text-start leading-tight outline-none transition-all hover:bg-blue-gray-50 hover:bg-opacity-80 hover:text-blue-gray-900 focus:bg-blue-gray-50 focus:bg-opacity-80 focus:text-blue-gray-900 active:bg-blue-gray-50 active:bg-opacity-80 active:text-blue-gray-900",
+        "ring": "bg-white w-6 h-6",
+        "icon": {
+            "name": "material-icons~user",
+            "size": "h-6 w-6",
+            "class": "cursor-pointer transition duration-1000 ease-in-out",
+            "color": "text-blue-500"
+        }
+    }
+}

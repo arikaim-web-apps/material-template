@@ -2,8 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+.field.error input {
+    @apply w-full h-full bg-gray-50 text-blue-gray-700 font-sans font-normal outline outline-0 focus:outline-0 disabled:bg-blue-gray-50 disabled:border-0 transition-all placeholder-shown:border placeholder-shown:border-red-500 placeholder-shown:border-t-red-500 border focus:border-2 border-t-transparent focus:border-t-transparent text-sm px-3 py-2.5 rounded-[7px] border-red-500 focus:border-red-500
+}
+
 .active-menu-item {
-   
+    @apply bg-gray-100 border-gray-300;
 }
 
 .active-button {

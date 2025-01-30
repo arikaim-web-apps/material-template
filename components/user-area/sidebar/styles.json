@@ -1,0 +1,28 @@
+{
+    "size": "w-auto sm:w-auto xs:w-auto",
+    "space": "pl-2",
+    "position": "top-0 left-0 sm:left-0 xs:left-0",
+    "color": "bg-gray-50 shadow",
+    "border": "border-r border-solid border-gray-200",
+    "tooltip": "sm:tooltip sm:tooltip-right",
+    "icon": {
+        "size": "h-5 w-5",
+        "width": 2,
+        "class": "cursor-pointer transition duration-1000 ease-in-out",
+        "color": "text-blue-500 hover:text-blue-500"
+    },
+    "logo": {
+        "size": "h-8 w-8",
+        "class": "cursor-pointer transition duration-1000 ease-in-out",
+        "color": "text-red-700"
+    },
+    "item": {
+        "link": "px-2 xs:hidden sm:hidden lg:block md:block font-medium text-sm cursor-pointer",
+        "class": "flex flex-row items-center",
+        "color": "border-transparent border-y border-l hover:rounded-l-xl hover:bg-gray-100 text-gray-900 hover:text-semibold transition duration-700 ease-in-out",
+        "active": "text-green-500"
+    },
+    "logout": {
+        "class": "mb-0 absolute bottom-4"
+    }
+}

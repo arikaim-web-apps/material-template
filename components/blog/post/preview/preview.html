@@ -9,14 +9,14 @@
             data-src="{{ url(post.image.thumbnail(512,512).src) }}" 
             alt="{{ post.title }}">
         {% else %}           
-            {{ component('icons~image',styles.preview.icon,'svg') }}               
+            {{ component('material-icons~image',styles.preview.icon,'svg') }}               
         {% endif %}
     </div> 
     <div
         class="h-auto flex-grow {{ styles.preview.space }}">
         <div class="flex flex-row {{ styles.preview.label }}">
             <span>{{ labels.published }}</span>
-            <span class="text-bold px-3 text-gray-300">{{ post.date_created|dateFormat }}</span>               
+            <span class="text-bold px-3 text-gray-700">{{ post.date_created|dateFormat }}</span>               
         </div>
         <a class="block {{ styles.preview.link }}" 
             href="{{ url('/blog/post/' ~ post.slug) }}">

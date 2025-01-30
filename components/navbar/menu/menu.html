@@ -1,40 +1,60 @@
+{% for item in links %}    
+    <div class="{{ styles.item.class }}">      
+        <a 
+            class="flex flex-row items-center" 
+            href="{{ url(item.url) }}">
+            {% if item.icon is not empty %}
+                <div class="px-1">
+                    {{ component(item.icon,styles.icon,'svg') }}  
+                </div>                           
+            {% endif %}
+            <span class="{{ styles.item.color }} {{ (active == item.key) ? styles.item.active : 'text-gray-900' }}">
+                {{ item.title }}
+            </span>            
+        </a>
+    </div>             
+{% endfor %}  
+
 {% set modules = readThemeModules(template_path,template_modules) %}
 
 {% for module in modules %}  
     {% for item in module.navbar.menu %}  
     <div class="{{ styles.item.class }}">
         <a 
-            class="flex flex-row items-center {{ styles.item.color }} {{ (active == item.key) ? styles.item.active : '' }}" 
+            class="flex flex-row items-center" 
             href="{{ url(item.url) }}">
             {% if item.icon is not empty %}
                 <div class="px-1">
                     {{ component(item.icon,styles.icon,'svg') }}  
                 </div>                           
             {% endif %}
-            {{ item.title }}
+            <span class="{{ styles.item.color }} {{ (active == item.key) ? styles.item.active : 'text-gray-900' }}">
+                {{ item.title }}
+            </span>              
         </a>
     </div>             
     {% endfor %}  
 {% endfor %}
             
 {% if service('access').isLogged() == false %}  
-
     {% for item in items.user %}  
-    <div class="{{ styles.item.class }}">
-        <a 
-            class="flex flex-row items-center {{ styles.item.color }} {{ (active == item.key) ? styles.item.active : '' }}" 
-            href="{{ url(item.url) }}">
-            {% if item.icon is not empty %}
-                <div class="px-1">
-                    {{ component(item.icon,styles.icon,'svg') }}  
-                </div>                           
-            {% endif %}
-            {{ item.title }}
-        </a>
-    </div>             
+        <div class="{{ styles.item.class }}">
+            <a 
+                class="flex flex-row items-center" 
+                href="{{ url(item.url) }}">
+                {% if item.icon is not empty %}
+                    <div class="px-1">
+                        {{ component(item.icon,styles.icon,'svg') }}  
+                    </div>                           
+                {% endif %}
+                <span class="{{ styles.item.color }}
+                    {{ (active == item.key) ? styles.item.active : 'text-gray-900' }}">
+                    {{ item.title }}
+                </span>     
+            </a>
+        </div>             
     {% endfor %}    
 {% else %}
-
     <a 
         class="{{ styles.item.color }}" 
         href="{{ url('/user') }}">

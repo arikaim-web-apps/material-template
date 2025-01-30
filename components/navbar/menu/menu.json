@@ -1,4 +1,16 @@
 {     
+    "links": [
+        {
+            "title": "Home",
+            "key": "home",         
+            "url": "/"
+        },
+        {
+            "title": "About",
+            "key": "about",         
+            "url": "/about"
+        }
+    ],
     "items": {
         "user": [
             {

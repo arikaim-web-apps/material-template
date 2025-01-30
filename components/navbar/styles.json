@@ -14,15 +14,15 @@
         "icon": "icons~menu"
     },
     "logo": {
-        "size": "h-8 w-8",
+        "size": "h-10 w-10",
         "class": "cursor-pointer transition duration-1000 ease-in-out",
-        "color": "text-sky-500"
+        "color": "text-red-700"
     },
     "icon": {
-        "name": "icons~user",
+        "name": "material-icons~user",
         "size": "h-6 w-6",
         "class": "cursor-pointer transition duration-1000 ease-in-out",
-        "color": "text-sky-500"
+        "color": "text-blue-500"
     },
     "tools": {
         "icon": {           
@@ -33,7 +33,7 @@
     },
     "item": {
         "class": "text-sm open-sans font-semibold px-4 md:p-1 lg:px-4",
-        "color": "text-gray-900 hover:text-sky-700 transition duration-700 ease-in-out",
-        "active": "text-sky-700"
+        "color": "hover:text-bold transition duration-700 ease-in-out",
+        "active": "text-gray-800 underline-offset-2 underline decoration-red-700 decoration-2"
     }
 }

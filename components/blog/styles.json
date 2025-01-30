@@ -1,23 +1,24 @@
 {
     "post": {
-        "border": "shadow rounded-box border border-stone-200 border-solid",
+        "border": "shadow rounded-lg border border-gray-400 border-solid",
         "space": "p-4",
         "color": "bg-white"
     },
     "preview": {
-        "border": "shadow rounded-box border border-stone-200 border-solid",
+        "border": "shadow rounded-lg border border-gray-400 border-solid",
         "space": "px-4 py-1",
         "color": "bg-white",
         "image": "w-full h-full rounded-t-lg transition-opacity ease-in duration-1000 opacity-0",
-        "label": "text-stone-500 text-sm",
+        "label": "text-gray-500 text-xs",
         "icon": {
             "size": "h-full w-full",
-            "width": "0.1",
-            "color": "text-stone-300"
+            "width": "1",
+            "stroke": "1",
+            "color": "text-gray-500"
         },
-        "link": "hover:text-stone-700 transition transition-duration-1000",
-        "title": "first-letter:text-stone-900 first-letter:font-bold mt-1 text-stone-800 text-xl",
-        "summary": "text-stone-600 text-md p-1"
+        "link": "hover:text-gray-700 transition transition-duration-1000",
+        "title": "mt-1 text-gray-800 text-xl",
+        "summary": "text-gray-600 text-md p-1"
     }
    
 }
