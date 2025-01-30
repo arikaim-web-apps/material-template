@@ -21,13 +21,7 @@ arikaim.component.onLoaded(function() {
         } else {
             callFunction(users.onLogin,result); 
         }           
-    },function() {
-        if (users.getLoginAttempts() > 0) {          
-            arikaim.page.loadContent({
-                id : 'captcha_panel',
-                component: 'captcha::code',
-                replace: true
-            });
-        }
+    },function(error) {
+        console.log(error); 
     });
 });

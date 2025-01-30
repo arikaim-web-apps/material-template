@@ -62,10 +62,8 @@
                 </label>
             </div>             
             <div class="field mt-2" id="captcha_panel">            
-                {% if captcha_protect == true %}           
-                    {% if service('access').getLoginAttempts() > 0 %}           
-                        {{ component('captcha::code') }}                
-                    {% endif %}       
+                {% if captcha_protect == true %}                                
+                    {{ component('captcha::code') }}                                   
                 {% endif %}   
             </div>    
             <div class="">
