@@ -1,0 +1,18 @@
+{
+    "border": "border-l-4 border-solid border-gray-100",
+    "color": "",
+    "size": "w-full",
+    "space": "px-10 py-2",
+    "form": {
+        "label": "flex flex-col my-1 font-semibold",
+        "input": {
+            "class": "w-full p-2 border border-solid rounded border-gray-200 placeholder-gray-400",
+            "focus": "focus:border-sky-300 focus:border focus:border-solid focus:outline-none",
+            "hover": "hover:border-sky-300 transition duration-1000 ease-in-out"
+        },
+        "textarea": "textarea textarea-bordered"
+    },
+    "separator": "mt-4",
+    "label": "block uppercase text-lg text-gray-600 font-thin",
+    "value": "text-gray-800 font-bold py-1"
+}

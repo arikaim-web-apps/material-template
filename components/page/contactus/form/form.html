@@ -1,0 +1,97 @@
+
+{% set settings = getOption('contactus.form.settings') %}
+<form class="form {{ class }}" id="contact_us_form">    
+    {% if settings.subject.show == 'true' %}
+    <div class="{{ theme.form.field }} {{ settings.subject.required|ifthen('true','required') }} ">
+        <input 
+            class="form-input 
+                {{ theme.form.input.class|default(styles.input.class) }} 
+                {{ theme.form.input.hover|default(styles.input.hover) }} 
+                {{ theme.form.input.focus|default(styles.input.focus) }}"         
+            rule="{{ (settings.subject.required == true) ? 'empty' : '' }}" 
+            type="text" 
+            name="subject" 
+            id="subject"
+            placeholder=" " 
+            value="">  
+        <label class="{{ theme.form.label|default(styles.label) }}">
+            {{ subject.label }}
+        </label>
+    </div>
+    {% endif %}   
+    <div class="mt-4 {{ theme.form.field }} required ">
+        <textarea 
+            class="form-input 
+                {{ theme.form.input.class|default(styles.input.class) }} 
+                {{ theme.form.input.hover|default(styles.input.hover) }} 
+                {{ theme.form.input.focus|default(styles.input.focus) }}"         
+            rule="empty" 
+            rows="4" 
+            cols="4" 
+            name="message" 
+            id="message" 
+            placeholder=" "></textarea>
+        <label class="{{ theme.form.label|default(styles.label) }}">
+            {{ message.label }}
+        </label>
+    </div>                 
+    {% if settings.name.show == 'true' %}   
+    <div class="{{ settings.name.required|ifthen('true','required') }} field">
+        <label class="{{ styles.form.label }}">
+            {{ name.label }}
+        </label>
+        <input 
+            class="{{ styles.form.input.class }} {{ styles.form.input.focus }} {{ styles.form.input.hover }}"
+            rule="{{ (settings.name.required == true) ? 'empty' : '' }}" 
+            type="text" 
+            name="name" 
+            id="name" 
+            {{ name.placeholder|attr('placeholder') }} 
+            value="">  
+    </div> 
+    {% endif %}
+    <div class="two fields">     
+        {% if settings.email.show == 'true' %}      
+            <div class="mt-4 {{ settings.email.required|ifthen('true','required') }} {{ theme.form.field }}">
+                <input 
+                    class="form-input
+                    {{ theme.form.input.class|default(styles.input.class) }} 
+                    {{ theme.form.input.hover|default(styles.input.hover) }} 
+                    {{ theme.form.input.focus|default(styles.input.focus) }}"  
+                    rule="{{ (settings.email.required == true) ? 'email' : '' }}" 
+                    type="text" 
+                    name="email" 
+                    id="email" 
+                    placeholder=" "
+                    value="">
+                <label class="{{ theme.form.label|default(styles.label) }}">
+                    {{ email.label }}
+                </label>
+            </div>
+        {% endif %}
+        {% if settings.phone.show == 'true' %} 
+        <div class="{{ settings.phone.required|ifthen('true','required') }} field">
+            <label class="{{ styles.form.label }}">
+                {{ phone.label }}
+            </label>
+            <input 
+                class="{{ styles.form.input.class }} {{ styles.form.input.focus }} {{ styles.form.input.hover }}"
+                rule="{{ (settings.phone.required == true) ? 'empty' : '' }}" 
+                type="text" 
+                name="phone" 
+                id="phone" 
+                {{ phone.placeholder|attr('placeholder') }} 
+                value="">
+        </div>
+        {% endif %}
+    </div>   
+    {% if settings.captcha.show == 'true' %}  
+        <div class="my-4">
+            {{ component('captcha::code') }}
+        </div>        
+    {% endif %}   
+    {{  component('current>form.footer',{           
+            button_title: buttons.save 
+        }) 
+    }}   
+</form>

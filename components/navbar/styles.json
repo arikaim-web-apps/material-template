@@ -22,7 +22,7 @@
         "name": "material-icons~user",
         "size": "h-6 w-6",
         "class": "cursor-pointer transition duration-1000 ease-in-out",
-        "color": "text-blue-500"
+        "color": "text-red-700"
     },
     "tools": {
         "icon": {           

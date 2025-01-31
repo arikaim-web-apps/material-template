@@ -10,6 +10,11 @@
     "copyright": {
         "color": "text-gray-700 text-xs"
     },
+    "share": {
+        "icon": {
+            "size": "h-8 w-8"
+        }  
+    },
     "icon": {
         "size": "h-4 w-4",
         "class": "",

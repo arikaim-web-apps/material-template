@@ -1,7 +1,7 @@
 <footer 
     class="block w-full bg-gray-100 {{ styles.class }} {{ styles.space }}">    
     <div 
-        class="py-8 {{ styles.size }} grid xs:grid-cols-1 grid-cols-1 gap-8 md:grid-cols-4 lg:grid-cols-4">
+        class="py-8 {{ styles.size }} grid xs:grid-cols-1 grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-5">
         <div>
             <div class="flex flex-row items-center">  
                 <div class="bg-slate-50 rounded-full">              
@@ -39,5 +39,28 @@
             {% endfor %}       
         </div> 
         {% endfor %} 
+        <div class="flex flex-row items-center">           
+            <a 
+                class="ml-4 {{ styles.item.class }}" 
+                title="{{ labels.linkedin }}"
+                aria-label="{{ labels.linkedin }}"
+                href="#">
+                {{ component('icons~linkedin.color',styles.share.icon,'svg') }} 
+            </a>  
+            <a 
+                class="ml-4 {{ styles.item.class }}" 
+                title="{{ labels.facebook }}"
+                aria-label="{{ labels.facebook }}"
+                href="#">
+                {{ component('icons~facebook.color',styles.share.icon,'svg') }} 
+            </a>   
+            <a 
+                class="ml-4 {{ styles.item.class }}" 
+                title="{{ labels.instagram }}"
+                aria-label="{{ labels.instagram }}"
+                href="#">
+                {{ component('icons~instagram.color',styles.share.icon,'svg') }} 
+            </a>           
+        </div>
     </div>
 </footer>

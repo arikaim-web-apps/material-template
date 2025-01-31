@@ -55,7 +55,7 @@
             "name": "Blog"                   
         },
         {
-            "path": "/contact",      
+            "path": "/contact-us",      
             "language-path": true,     
             "page": "contact-us",
             "name": "Contact"                   

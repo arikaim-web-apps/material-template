@@ -1,0 +1,31 @@
+<div   
+    class="w-2/3 mx-auto sm:w-full lg:w-2/3 grid grid-cols-2 lg:grid-cols-2 sm:grid-cols-1">
+    <div    
+        class="{{ styles.space }} {{ styles.size }}">
+        <label class="{{ styles.label }}">
+            {{ labels.email }}
+        </label>
+        <div class="{{ styles.value }}">
+            myemail@mail.com
+        </div>
+        <div class="{{ styles.separator }}"></div>
+        <label class="{{ styles.label }}">
+            {{ labels.phone }}
+        </label>
+        <div class="{{ styles.value }}">
+            202-122-2323
+        </div>
+        <div class="{{ styles.separator }}"></div>
+        <label class="{{ styles.label }}">
+            {{ labels.location }}
+        </label>
+        <div class="{{ styles.value }}">
+            2160 Hood Avenue, San Diego, CA, 82321 
+        </div>
+    </div>
+    <div     
+        class="{{ styles.space }} {{ styles.color }} {{ styles.border }} {{ styles.size }}" 
+        id="contactus_content">
+        {{ component('current>page.contactus.form',{ styles: styles }) }}
+    </div>
+</div>
