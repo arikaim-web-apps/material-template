@@ -7,8 +7,8 @@
             "size": "h-6 w-6",
             "color": "text-orange-400"
         },
-        "class": "py-1 border-0 border-b border-gray-200 border-solid",
-        "color": "px-1 font-bold"
+        "class": "py-1 roboto-condensed text-lg border-0 border-b border-gray-200 border-solid",
+        "color": "px-1 font-semibold"
     },
     "color": "bg-white"       
 }

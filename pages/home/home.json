@@ -6,9 +6,16 @@
         "keywords": "Material Template"
     },
     "title": "Material Template",
-    "subtitle": "Material Template.",
-    "labels": {
+    "subtitle": "Material Design",
+    "text": {
+        "design": "Material Design is a design language developed by Google in 2014. It’s used to create visually appealing and highly functional digital interfaces for websites and mobile applications."
     },
-    "features": {
-    }   
+    "labels": {
+        "cases": "Use Cases"
+    },
+    "items": [
+        "<b>Mobile Apps</b> Android apps often follow Material Design principles to create intuitive and aesthetically pleasing user interfaces.",
+        "<b>Web Applications</b> Many modern web applications incorporate Material Design for its clean, user-friendly interface.",
+        "<b>Cross-Platform Consistency</b> Because the design language is adaptable, it’s used to create consistent experiences across multiple devices and screen sizes."
+    ]
 }

@@ -9,7 +9,7 @@
                 </div>                                                                         
                 <div class="pl-2">                
                     <div 
-                        class="inline-block oswald-font align-baseline text-xl font-medium hover:text-sky-500 transition duration-700 ease-in-out">
+                        class="inline-block roboto-slab align-baseline text-xl font-medium hover:text-sky-500 transition duration-700 ease-in-out">
                         <a href="{{ url('') }}" class="align-baseline text-stone-100">
                             {{ title }}    
                         </a>
@@ -19,10 +19,12 @@
             <div 
                 class="px-1 pt-2 flex flex-row items-center">              
                 {{ component('material-icons~copyright',styles.icon,'svg') }}             
-                <div class="px-1 {{ styles.copyright.color }}">       
-                    {{ copyright|renderText({ interval: currentYear() }) }}             
-                </div>                                 
+                <div class="px-1 roboto-mono {{ styles.copyright.color }}">       
+                    {{ copyright|renderText({ interval: currentYear() }) }} 
+                      
+                </div>                                                  
             </div> 
+            <p class="px-2 roboto-mono {{ styles.copyright.color }}">{{ all }}</p>       
         </div> 
         {% for column in columns %}
         <div>

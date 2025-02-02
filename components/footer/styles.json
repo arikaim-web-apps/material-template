@@ -21,8 +21,8 @@
         "color": "text-gray-400"
     },
     "item": {
-        "title": "mb-4 text-xs font-semibold dark:text-gray-100 text-gray-700 uppercase",
-        "class": "mt-2 link link-hover flex flex-row items-center",
+        "title": "mb-4 text-xs roboto-condensed font-semibold dark:text-gray-100 text-gray-700 uppercase",
+        "class": "roboto mt-2 link link-hover flex flex-row items-center",
         "color": "dark:text-gray-100 text-sm text-gray-700 hover:text-bold transition duration-700 ease-in-out",
         "active": "text-gray-700"
     }

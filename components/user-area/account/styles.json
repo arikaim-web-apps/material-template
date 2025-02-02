@@ -4,12 +4,12 @@
         "color": "text-blue-500"
     },
     "item": {
-        "class": "rounded p-2 flex flex-row items-center transition duration-700 ease-in-out hover:text-semibold cursor-pointer hover:bg-gray-200",          
+        "class": "roboto-condensed rounded p-2 flex flex-row items-center transition duration-700 ease-in-out hover:text-semibold cursor-pointer hover:bg-gray-200",          
         "icon": {         
             "size": "h-6 w-6",
             "width": 1,
             "color": "text-blue-400"
         },       
-        "link": "px-1 font-medium text-sm " 
+        "link": "px-1 text-md " 
     }
 }

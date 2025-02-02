@@ -11,7 +11,7 @@
         "border": ""
     },
     "sidebar": {
-        "icon": "icons~menu"
+        "icon": "material-icons~menu"
     },
     "logo": {
         "size": "h-10 w-10",
@@ -32,8 +32,8 @@
         }
     },
     "item": {
-        "class": "text-sm open-sans font-semibold px-4 md:p-1 lg:px-4",
-        "color": "hover:text-bold transition duration-700 ease-in-out",
+        "class": "text-md roboto-condensed px-4 md:p-1 lg:px-4 hover:font-bold transition-all duration-1000 ease-in-out",
+        "color": "",
         "active": "text-gray-800 underline-offset-2 underline decoration-red-700 decoration-2"
     }
 }

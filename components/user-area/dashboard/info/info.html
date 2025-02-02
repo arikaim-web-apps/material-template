@@ -1,7 +1,7 @@
 {% component 'current>user-area.dashboard.item' %}
     <div class="pt-4">
         <div class="py-2">
-            <div class="text-sm font-semibold">            
+            <div class="{{ styles.item.title }}">            
                 {{ labels.login }}                                         
             </div>
             <div class="flex items-center">
@@ -10,7 +10,7 @@
             </div>      
         </div>
         <div class="py-2">
-            <div class="text-sm font-semibold">           
+            <div class="{{ styles.item.title }}">           
                 {{ labels.signup }}           
             </div>     
             <div class="flex items-center">

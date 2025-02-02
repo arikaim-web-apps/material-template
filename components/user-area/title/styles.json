@@ -1,5 +1,5 @@
 {
-    "title": "font-semibold text-gray-800 text-center text-md p-2",
+    "title": "roboto-condensed font-semibold text-gray-800 text-center text-lg p-2",
     "color": "bg-gray-50 rounded-b-lg shadow-md shadow-gray-200",
     "size": "w-64 md:w-64 sm:w-full sm:w-full",
     "icon": {

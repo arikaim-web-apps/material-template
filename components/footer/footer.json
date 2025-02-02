@@ -43,5 +43,6 @@
         }
     },
     "created": "Created with Arikaim CMS",
-    "copyright": "Copyright {{ interval }}. All Rights Reserved."
+    "copyright": "Copyright {{ interval }}. ",
+    "all": "All Rights Reserved."
 }

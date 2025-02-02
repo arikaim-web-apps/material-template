@@ -10,10 +10,10 @@
         "size": "h-6 w-6",
         "class": "cursor-pointer transition duration-1000 ease-in-out",
         "color": "text-sky-500"
-    },
+    },  
     "item": {
-        "class": "text-sm open-sans font-semibold px-4 md:p-1 lg:px-4 py-1",
-        "color": "text-gray-900 hover:text-sky-700 transition duration-700 ease-in-out",
-        "active": "text-sky-700"
+        "class": "text-md roboto-condensed px-4 md:p-1 lg:px-4 py-1",
+        "color": "hover:font-bold transition-all duration-1000 ease-in-out",
+        "active": "text-gray-800 underline-offset-2 underline decoration-red-700 decoration-2"
     }
 }

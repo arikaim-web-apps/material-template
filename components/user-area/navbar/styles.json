@@ -16,7 +16,7 @@
         "color": "text-gray-800"
     },
     "item": {
-        "class": "text-sm open-sans font-semibold px-4 md:p-1 lg:px-4",
+        "class": "text-sm  font-semibold px-4 md:p-1 lg:px-4",
         "color": "text-gray-900 hover:text-blue-700 transition duration-700 ease-in-out",
         "active": "text-blue-700"
     },

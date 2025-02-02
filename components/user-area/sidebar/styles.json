@@ -17,7 +17,7 @@
         "color": "text-red-700"
     },
     "item": {
-        "link": "px-2 xs:hidden sm:hidden lg:block md:block font-medium text-sm cursor-pointer",
+        "link": "roboto-condensed px-2 xs:hidden sm:hidden lg:block md:block text-md cursor-pointer",
         "class": "flex flex-row items-center",
         "color": "border-transparent border-y border-l hover:rounded-l-xl hover:bg-gray-100 text-gray-900 hover:text-semibold transition duration-700 ease-in-out",
         "active": "text-green-500"

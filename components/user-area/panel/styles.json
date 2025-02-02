@@ -2,7 +2,7 @@
     "class": "w-full transition-opacity duration-500 ease-in-out opacity-0",
     "color": "p-2 bg-gray-50 rounded-xl shadow",
     "title": {
-        "class": "p-1 text-sm flex flex-row items-center font-semibold text-gray-900 bg-gray-50 rounded-t-xl",
+        "class": "p-1 roboto-condensed text-md flex flex-row items-center  text-gray-900 bg-gray-50 rounded-t-xl",
         "icon": {
             "size": "h-6 w-6",
             "color": "text-orange-500"
