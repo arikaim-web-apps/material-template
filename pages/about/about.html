@@ -2,16 +2,16 @@
     {% set active = 'about' %}
     {{ component('current>page.title',{ title: title, subtitle: description }) }}     
     
-    <div class="px-32 my-20 gap-8 grid grid-cols-3 lg:grid-cols-3 xs:grid-cols-1">
+    <div class="self-center grid grid-cols-3 lg:grid-cols-3 xs:grid-cols-3 sm:grid-cols-3 gap-8 lg:gap-8 xs:gap-4 sm:gap-4 md:gap-4">
         <div           
-            class="w-full">
+            class="justify-self-end">
             <img  
-                class="w-full rounded-lg"               
+                class="justify-self-end h-full md:aspect-auto opacity-90 rounded-lg opacity-animation transition-opacity ease-in duration-1000 opacity-0"               
                 alt="About"
                 src="{{ template_url }}images/about-page-image.jpg">
         </div>
         <div          
-            class="w-full colspan-2">
+            class="col-span-2 opacity-animation w-full transition-opacity ease-in duration-1000 opacity-0">
             <h4 class="text-center font-sembold text-2xl ">
                 {{ labels.created }}
             </h4>

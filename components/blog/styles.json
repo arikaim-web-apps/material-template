@@ -6,7 +6,7 @@
     },
     "preview": {
         "border": "shadow rounded-lg border border-gray-400 border-solid",
-        "space": "px-4 py-1",
+        "space": "px-4 py-2",
         "color": "bg-white",
         "image": "w-full h-full rounded-t-lg transition-opacity ease-in duration-1000 opacity-0",
         "label": "text-gray-500 text-xs",
@@ -18,7 +18,8 @@
         },
         "link": "hover:text-gray-700 transition transition-duration-1000",
         "title": "mt-1 text-gray-800 text-xl",
-        "summary": "text-gray-600 text-md p-1"
+        "summary": "text-gray-600 text-md p-1",
+        "button": "uppercase rounded-md bg-green-600 roboto py-1 px-2.5 border border-transparent text-center text-xs text-white transition-all shadow-md hover:shadow-lg focus:bg-green-700 focus:shadow-none active:bg-green-700 hover:bg-green-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"          
     }
    
 }

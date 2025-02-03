@@ -24,8 +24,4 @@ In theme folder:
 4. Start watch process
     npx tailwindcss -i css/include.css -o css/tailwind.min.css -m --watch 
  
-
- #### Photos by
-
-* <a href="https://unsplash.com/@bohdan_orlov?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Bohdan Orlov</a> on <a href="https://unsplash.com/photos/a-close-up-of-some-tooth-brushes-vTUevo0WOUM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
       

@@ -1,0 +1,26 @@
+<div class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96">
+  <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
+    <img 
+      class="w-full min-h-56"
+      src="{{ template_url }}/images/{{ item.image }}" 
+      alt="service-image" />
+  </div>
+  <div class="p-4 flex flex-col items-strech flex-grow">
+    <h6 class="mb-2 text-slate-800 text-xl font-semibold">
+      {{ item.title }}
+    </h6>
+    <div class="flex-grow">
+      <p class="ext-slate-600 leading-normal font-light">
+        {{ item.description }}
+      </p>
+    </div>
+    <div class="pt-4 pb-2 self-center">
+      <button 
+        class="{{ styles.item.button }}" 
+        type="button">
+        {{ button }}
+      </button>
+    </div>
+  </div>
+ 
+</div> 
