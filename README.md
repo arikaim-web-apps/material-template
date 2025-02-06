@@ -5,14 +5,14 @@
 
 
 #### Created With 
-    * Tailwind CSS
+    * Tailwind CSS 3.4
     * https://www.material-tailwind.com
 
 #### Customization 
 
 In theme folder: 
 
-1. Install Tailwind CSS
+1. Install Tailwind CSS 3.4
     npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
 
 2. Install Tailwind material design

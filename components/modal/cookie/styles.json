@@ -3,7 +3,7 @@
     "size": "w-96 max-w-5xl p-4",
     "color": "bg-white dark:bg-gray-800 dark:text-gray-400",
     "border": "rounded-lg shadow-lg border dark:border-gray-300 border-gray-400 border-solid",
-    "title": "pb-2 dark:text-gray-200 font-bold text-lg flex flex-row items-center text-gray-700",
+    "title": "pb-2 roboto-condensed dark:text-gray-200 font-semibold text-lg flex flex-row items-center text-gray-700",
     "buttons": "py-2",
     "details": "py-2",
     "close": "cursor-pointer hover:text-sky-500",
@@ -15,5 +15,5 @@
         "class": "",
         "color": "text-gray-800 dark:text-gray-200"
     },
-    "link": "text-sky-500 font-semibold hover:underline"
+    "link": "text-sky-500 roboto-condensed font-sormal hover:underline"
 }

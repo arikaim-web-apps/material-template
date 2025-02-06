@@ -1,12 +1,12 @@
-<div class="min-h-fit flex flex-col {{ styles.preview.color }} {{ styles.preview.border }}">    
+<div class=" flex flex-col {{ styles.preview.color }} {{ styles.preview.border }}">    
     <div
-        class="relative w-full h-44">
+        class="relative w-full h-56 overflow-hidden">
         {% if post.image.src is not empty %} 
         {{ component('current>loader.image',{}) }}                     
         <img 
             animation="opacity-100"
             class="{{ styles.preview.image }}" 
-            data-src="{{ url(post.image.thumbnail(512,512).src) }}" 
+            data-src="{{ url(post.image.thumbnail(256,null).src) }}" 
             alt="{{ post.title }}">
         {% else %}           
             {{ component('material-icons~image',styles.preview.icon,'svg') }}               

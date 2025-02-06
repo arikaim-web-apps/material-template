@@ -8,13 +8,13 @@
         "border": "shadow rounded-lg border border-gray-400 border-solid",
         "space": "px-4 py-2",
         "color": "bg-white",
-        "image": "w-full h-full rounded-t-lg transition-opacity ease-in duration-1000 opacity-0",
-        "label": "text-gray-500 text-xs",
+        "image": "w-full min-h-56 rounded-t-lg transition-opacity ease-in duration-1000 opacity-0",
+        "label": "text-gray-600 text-xs",
         "icon": {
             "size": "h-full w-full",
             "width": "1",
             "stroke": "1",
-            "color": "text-gray-500"
+            "color": "text-gray-600"
         },
         "link": "hover:text-gray-700 transition transition-duration-1000",
         "title": "mt-1 text-gray-800 text-xl",

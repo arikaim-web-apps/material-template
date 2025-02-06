@@ -2,8 +2,8 @@
     "title": "Blog",    
     "head": {
         "favicon": "images/favicon.png",  
-        "title": "Web development blog",
-        "description": "Web development blog",
-        "keywords": "web development, web apps, blog"
+        "title": "Blog",
+        "description": "Blog",
+        "keywords": "blog"
     }    
 }

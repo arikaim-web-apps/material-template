@@ -4,7 +4,11 @@
     class="sidebar absolute z-10 hidden {{ styles.class }} 
     {{ styles.color }} 
     {{ styles.size }}">
-    <div class="{{ styles.content.class }}">
-        {{ component('current>sidebar.menu',{ styles: styles }) }} 
+    <div class="z-10 {{ styles.content.class }}">        
+        {{  component('current>navbar.menu',{ 
+                active: active,
+                styles: styles 
+            }) 
+        }} 
     </div>   
 </sidebar>     

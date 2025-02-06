@@ -5,6 +5,23 @@
     },
     "title": "About",
     "labels": {
-        "created": "Created with "
-    }
+        "created": "Created with",
+        "pages": "Pages",
+        "arikaim": "Arikaim CMS",
+        "tailwind": "Tailwind CSS",
+        "material": "Material Tailwind components library",
+        "requirements": "Requirements"
+    },
+    "pages": [
+        "About",
+        "Contact Us",
+        "Blog",
+        "Services",
+        "Terms and Conditions",
+        "Privacy Policy",
+        "User login",
+        "User signup",
+        "User dashboard",
+        "User profile"
+    ]
 }

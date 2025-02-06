@@ -37,6 +37,12 @@
             "name": "About"                   
         },
         {
+            "path": "/services",           
+            "page": "services",
+            "language-path": true,
+            "name": "Services"                   
+        },
+        {
             "path": "/privacy-policy",           
             "page": "privacy",
             "language-path": true,

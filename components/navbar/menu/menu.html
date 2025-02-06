@@ -55,9 +55,12 @@
         </div>             
     {% endfor %}    
 {% else %}
-    <a 
-        class="{{ styles.item.color }}" 
-        href="{{ url('/user') }}">
-        {{ component(styles.icon.name,styles.icon,'svg') }}  
-    </a> 
+    <div 
+        class="place-content-center {{ styles.item.class }}">
+        <a 
+            class="{{ styles.item.color }}" 
+            href="{{ url('/user') }}">
+            {{ component(styles.icon.name,styles.icon,'svg') }}  
+        </a> 
+    </div>      
 {% endif %}

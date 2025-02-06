@@ -6,6 +6,11 @@
             "url": "/"
         },
         {
+            "title": "Services",
+            "key": "services",         
+            "url": "/services"
+        },
+        {
             "title": "About",
             "key": "about",         
             "url": "/about"

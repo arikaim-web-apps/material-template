@@ -14,7 +14,7 @@
         </div>  
         <div  
           class="col-span-2 opacity-animation w-full transition-opacity ease-in duration-1000 opacity-0">
-          <h2 class="text-3xl roboto-condensed font-semobold">
+          <h2 class="underline-offset-2 underline decoration-red-700 decoration-2 text-3xl roboto-condensed font-semobold">
               {{ subtitle }}
           </h2>
           <p class="my-4">
@@ -27,9 +27,7 @@
             {% endfor %}
           </ul>
         </div>
-      </div>    
-    
-    </div>      
-    
-    {{ component('current>services') }}   
+      </div>        
+    </div>          
+    {{ component('current>services',{ class: 'my-32' }) }}   
 {% endcomponent %}

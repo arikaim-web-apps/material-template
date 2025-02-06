@@ -1,10 +1,5 @@
 {% component 'current>layout' type 'html' %}   
     {% set active = 'services' %}     
     {{ component('current>page.title',{ title: title, subtitle: description }) }}     
-    <div 
-      class="mt-24 flex justify-center px-10">
-      
-      {{ component('current>services') }}   
-    </div>      
-                
+    {{ component('current>services',{ hide_title: true }) }}           
 {% endcomponent %}

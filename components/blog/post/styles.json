@@ -4,7 +4,7 @@
     "color": "bg-gray-50",
     "image": "transition-opacity ease-in duration-1000 opacity-0 w-64 h-64 xs:w-full xs:h-full md:w-64 md:h-64 rounded-lg",
     "size": "min-h-full",
-    "label": "text-sm text-gray-500 p-1",
+    "label": "text-xs text-gray-600 p-1",
     "icon": {
         "size": "h-full w-full",
         "width": "0.1",

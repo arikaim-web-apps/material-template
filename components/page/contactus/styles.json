@@ -13,6 +13,6 @@
         "textarea": "textarea textarea-bordered"
     },
     "separator": "mt-4",
-    "label": "block uppercase text-lg text-gray-600 font-thin",
+    "label": "block uppercase text-md text-gray-600 font-thin",
     "value": "text-gray-800 font-bold py-1"
 }
