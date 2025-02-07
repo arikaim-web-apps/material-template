@@ -2,12 +2,12 @@
     class="flex flex-col items-stretch {{ theme.page.color }}" 
     style="height: calc(100vh - calc(100vh - 100%))">
     {{ component('current>navbar',{ active: active }) }}    
-    <div 
+    <div        
         class="flex flex-row self-stretch items-stretch flex-grow {{ theme.page.color }} "> 
         <div class="relative z-0">
             {{ component('current>sidebar',{ active: active }) }}   
         </div>       
-        <div           
+        <div             
             class="px-4 mb-24 min-h-screen {{ theme.page.size }} {{ theme.page.content }}">
             {{ content }}                 
         </div>          

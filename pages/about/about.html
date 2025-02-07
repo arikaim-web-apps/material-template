@@ -20,7 +20,7 @@
                     {% for item in pages %}
                     <li class="flex items-center space-x-1">
                         {{ component('icons~check.badge',{ size: 'h-5 w-5', class: 'text-green-500' },'svg') }}
-                        <div class="ml-4">{{ item }}</div>
+                        <div class="ml-4 text-md">{{ item }}</div>
                     </li>
                     {% endfor %}
                 </ul>       
@@ -32,12 +32,11 @@
                 <ul class="space-y-2 text-left roboto-condensed font-thin">
                     <li class="flex items-center space-x-1 text-2xl ">
                         {{ component('current>icons.tailwind',{ size: 'h-12 w-12', class: '' },'svg') }}
-                        <span class="px-4">{{ labels.tailwind }}</span>
+                        <span class="px-4 text-md">{{ labels.tailwind }}</span>
                     </li>
                     <li class="flex items-center space-x-1 text-2xl ">
-                        <div class="h-12 w-12"></div>
-                        
-                        <span class="px-4">{{ labels.material }}</span>
+                        <div class="h-12 w-12"></div>                        
+                        <span class="px-4 text-md">{{ labels.material }}</span>
                     </li>
                 </ul>
             </div>
@@ -52,7 +51,7 @@
                                 src="{{ template_url }}images/arikaim-logo.png" 
                                 alt="Arikaim CMS logo">
                         </div>                        
-                        <span class="px-4">{{ labels.arikaim }}</span>
+                        <span class="px-4 text-md">{{ labels.arikaim }}</span>
                     </li>
                 </ul>
             </div>
