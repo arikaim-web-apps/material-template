@@ -12,7 +12,7 @@
         },
         "textarea": "textarea textarea-bordered"
     },
-    "separator": "mt-4",
+    "separator": "mt-8",
     "label": "block uppercase text-md text-gray-600 font-thin",
-    "value": "text-gray-800 font-bold py-1"
+    "value": "text-gray-800 font-semibold py-1"
 }

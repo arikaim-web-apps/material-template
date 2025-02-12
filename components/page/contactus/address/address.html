@@ -1,16 +1,24 @@
-{% set icon_size = icon_size|default('h-6 w-6') %}
-{% set icon_color = icon_color|default('text-sky-400') %}
-<div class="{{ class }} {{ space_class|default('my-2') }} {{ text_class|default('font-semibold') }}">
-    <div class="flex flex-row items-center ">
-        {{ component('icons~mail',{ size: icon_size, color: icon_color },'svg') }}    
-        <div class="px-1">{{ address.email }}</div>
+<div class="{{ class }}">
+    <label class="{{ styles.label }}">
+        {{ labels.email }}
+    </label>
+    <div class="{{ styles.value }}">
+        {{ address.email|default('email@mail.com') }} 
     </div>
-    <div class="flex flex-row items-center ">
-        {{ component('icons~phone',{ size: icon_size, color: icon_color },'svg') }}    
-        <div class="px-1">{{ address.phone }}</div>
+
+    <div class="{{ styles.separator }}"></div>
+    <label class="{{ styles.label }}">
+        {{ labels.phone }}
+    </label>
+    <div class="{{ styles.value }}">
+        {{ address.phone|default('0000-0000-0000') }}
     </div>
-    <div class="flex flex-row items-center ">
-        {{ component('icons~address',{ size: icon_size, color: icon_color },'svg') }}    
-        <div class="px-1">{{ address.street }}</div>
-    </div>
+    
+    <div class="{{ styles.separator }}"></div>
+    <label class="{{ styles.label }}">
+        {{ labels.location }}
+    </label>
+    <div class="{{ styles.value }}">
+        {{ address.street|default('Street address') }}        
+    </div>   
 </div>

@@ -1,9 +1,9 @@
 {      
-    "title": "Material Base Theme",
-    "version": "1.0.3",
+    "title": "Material Template",
+    "version": "1.0.4",
     "name": "material",
     "package-type": "template",
-    "icon": "shop",
+    "icon": "dashboard",
     "thumbnail": "material-template-thumbnail.png",
     "private-repository": true,
     "repository": "https://github.com/arikaim-web-apps/material-template.git",

@@ -2,25 +2,9 @@
     class="w-2/3 mx-auto sm:w-full lg:w-2/3 grid grid-cols-2 lg:grid-cols-2 sm:grid-cols-1">
     <div    
         class="opacity-animation transition-opacity ease-in duration-1000 opacity-0 {{ styles.space }} {{ styles.size }}">
-        <label class="{{ styles.label }}">
-            {{ labels.email }}
-        </label>
-        <div class="{{ styles.value }}">
-            myemail@mail.com
-        </div>
-        <div class="{{ styles.separator }}"></div>
-        <label class="{{ styles.label }}">
-            {{ labels.phone }}
-        </label>
-        <div class="{{ styles.value }}">
-            202-122-2323
-        </div>
-        <div class="{{ styles.separator }}"></div>
-        <label class="{{ styles.label }}">
-            {{ labels.location }}
-        </label>
-        <div class="{{ styles.value }}">
-            2160 Hood Avenue, San Diego, CA, 82321 
+        {{ component('current>page.contactus.address',{ styles: styles }) }}
+        <div class="mt-12 flex place-content-center">
+            {{ component('current>share.links',{}) }}     
         </div>
     </div>
     <div     
