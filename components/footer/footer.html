@@ -1,31 +1,20 @@
 <footer 
     class="block w-full bg-gray-100 {{ styles.class }} {{ styles.space }}">    
     <div 
-        class="py-8 {{ styles.size }} grid xs:grid-cols-1 grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-5">
-        <div>
-            <div class="flex flex-row items-center">  
-                <div class="bg-slate-50 rounded-full">              
-                    {{ component('material-icons~dashboard',{ size: 'h-10 w-10' },'svg') }}                
-                </div>                                                                         
-                <div class="pl-2">                
-                    <div 
-                        class="inline-block roboto-slab align-baseline text-xl font-medium hover:text-sky-500 transition duration-700 ease-in-out">
-                        <a href="{{ url('') }}" class="align-baseline text-stone-100">
-                            {{ title }}    
-                        </a>
-                    </div>                                                    
-                </div>                                                                   
-            </div>
-            <div 
-                class="px-1 pt-2 flex flex-row items-center">              
-                {{ component('material-icons~copyright',styles.icon,'svg') }}             
-                <div class="px-1 roboto-mono {{ styles.copyright.color }}">       
-                    {{ copyright|renderText({ interval: currentYear() }) }} 
-                      
-                </div>                                                  
-            </div> 
-            <p class="px-2 roboto-mono {{ styles.copyright.color }}">{{ all }}</p>       
-        </div> 
+        class="py-8 {{ styles.size }} grid  xs:grid-cols-1 grid-cols-5 gap-8 md:grid-cols-5 lg:grid-cols-5">
+        <div class="flex flex-row items-center">  
+            <div class="bg-slate-50 rounded-full">              
+                {{ component('material-icons~dashboard',{ size: 'h-10 w-10' },'svg') }}                
+            </div>                                                                         
+            <div class="pl-2">                
+                <div 
+                    class="inline-block roboto-slab align-baseline text-xl font-medium hover:text-sky-500 transition duration-700 ease-in-out">
+                    <a href="{{ url('') }}" class="align-baseline text-stone-100">
+                        {{ title }}    
+                    </a>
+                </div>                                                    
+            </div>                                                                   
+        </div>
         {% for column in columns %}
         <div>
             <h2 class="{{ styles.item.title }}">
@@ -42,5 +31,13 @@
         </div> 
         {% endfor %} 
         {{ component('current>share.links',{}) }}        
-    </div>
+    </div>    
+    <div 
+        class="{{ styles.size }} pb-4 pt-2 flex flex-row items-center">              
+        {{ component('material-icons~copyright',styles.icon,'svg') }}             
+        <div class="px-1 roboto-mono {{ styles.copyright.color }}">       
+            {{ copyright|renderText({ interval: currentYear() }) }}                     
+        </div>     
+        <p class="px-2 roboto-mono {{ styles.copyright.color }}">{{ all }}</p>                                             
+    </div>    
 </footer>
