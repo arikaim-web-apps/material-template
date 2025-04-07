@@ -15,6 +15,7 @@
 In template folder: 
 
 2. Install Tailwind run 
+
 ```sh
 
 npm install
