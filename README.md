@@ -13,8 +13,16 @@
 In theme folder: 
 
 1. Install Tailwind run 
-   npm install
+```sh
 
-4. Start watch process
-    npx tailwindcss -i css/include.css -o css/tailwind.min.css -m --watch 
-    
+npm install
+
+```
+
+2. Start watch process
+
+```sh
+
+npx tailwindcss -i css/include.css -o css/tailwind.min.css -m --watch 
+
+```
