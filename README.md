@@ -12,7 +12,7 @@
 
 1. Copy files in folder ../arikaim/view/templates/material
 
-<b>or run git command from folder<b> ./arikaim/view/templates/
+<b>or run git command from folder</b> ./arikaim/view/templates/
 
 ```sh 
 
