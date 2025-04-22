@@ -11,6 +11,12 @@
 #### Customization 
 
 1. Copy files in folder ../arikaim/view/templates/material
+or use git command
+
+```sh 
+git clone https://github.com/arikaim-web-apps/material-template.git arikaim/view/templates/material
+```
+
 
 In template folder: 
 

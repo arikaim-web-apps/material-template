@@ -5,7 +5,6 @@
     "package-type": "template",
     "icon": "dashboard",
     "thumbnail": "material-template-thumbnail.png",
-    "private-repository": true,
     "repository": "https://github.com/arikaim-web-apps/material-template.git",
     "require": {
         "components": [
