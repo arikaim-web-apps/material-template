@@ -11,11 +11,15 @@
 #### Customization 
 
 1. Copy files in folder ../arikaim/view/templates/material
-or use git command
+
+<b>or run git command from folder<b> ./arikaim/view/templates/
 
 ```sh 
-git clone https://github.com/arikaim-web-apps/material-template.git arikaim/view/templates/material
+
+git clone https://github.com/arikaim-web-apps/material-template.git material
+
 ```
+
 
 
 In template folder: 
