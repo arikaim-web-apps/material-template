@@ -1,5 +1,9 @@
 ## Arikaim Material design template
 
+
+![image](https://github.com/arikaim-web-apps/material-template/blob/master/images/material-template-thumbnail.jpg?raw=true)
+
+
 #### Requirements 
   * [Arikaim CMS](https://github.com/arikaim/arikaim)
 
